@@ -38,8 +38,8 @@ function fuck2() {
   var audioLoader = new THREE.AudioLoader()
   audioLoader.load('assets/DaSquareBass_long.wav', function (buffer) {
     sound.setBuffer(buffer)
-    // sound.setLoop(true)
-    sound.setVolume(0.8)
+    sound.setLoop(true)
+    sound.setVolume(1)
     sound.play()
   })
 

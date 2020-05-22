@@ -71,6 +71,8 @@ function fuck2() {
     let elapsed = time.getElapsedTime() * (100 / 60) * 2
     let delta = time.getDelta()
 
+    elapsed = elapsed % (328 + 60)
+
     elapsed -= 12
 
     let i = Math.floor(elapsed / 4)

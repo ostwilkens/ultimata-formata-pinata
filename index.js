@@ -45,10 +45,10 @@ function fuck2() {
 
   let time = new THREE.Clock(true)
 
-  mtlLoader.load('/assets/herrstugan/herrstugan1.mtl', (materials) => {
+  mtlLoader.load('assets/herrstugan/herrstugan1.mtl', (materials) => {
     materials.preload()
     objLoader.setMaterials(materials)
-    objLoader.load('/assets/herrstugan/herrstugan1.obj', (object) => {
+    objLoader.load('assets/herrstugan/herrstugan1.obj', (object) => {
       object.rotateX(-Math.PI / 2)
       object.position.x = -2
       scene.add(object)
